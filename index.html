@@ -4,12 +4,13 @@
 http-equiv="Content-Type">
   <title>Oi Stein</title>
 </head>
-<audio autoplay loop>
-  <source src="dialtone.mp3">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<audio id="track" autoplay="autoplay" loop="loop">
+    <source src="dialtone.ogg" type="audio/ogg" />
 </audio>
-<a href="#" onclick="document.getElementById('ambiance').muted = true; return false">
-    mute sound
-</a>
+
+<div class='unmute' onclick="document.getElementById('track').muted = !document.getElementById('track').muted;$(this).toggleClass('mute')"></div>
 <body alink="#EE0000" bgcolor="#177013" link="#0000EE" text="#000000"
 vlink="#551A8B">
 <h1 align="center"><font color="#310771"><big><big><u>STEIN YA TWAT
