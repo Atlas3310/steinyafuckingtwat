@@ -11,6 +11,10 @@ http-equiv="Content-Type">
 <audio id="dialtone" autoplay loop>
     <source src="dialtone.mp3" type="audio/mp3">
 </audio>
+<script>
+  var audio = document.getElementById("dialtone");
+  audio.volume = 0.2;
+</script>
 <img src="mute-icon.png" onclick="document.getElementById('dialtone').pause()" />
 <img src="unmute-icon.png" onclick="document.getElementById('dialtone').play()" />
 <body alink="#EE0000" bgcolor="#177013" link="#0000EE" text="#310771"
