@@ -14,9 +14,11 @@ http-equiv="Content-Type">
 <script>
   var audio = document.getElementById("dialtone");
   audio.volume = 0.2;
+  }
 function mute() {
   document.getElementById("dialtone");
   audio.volume = 0.0;
+}
 </script>
 <img src="mute-icon.png" onclick= "mute()"/>
 <img src="unmute-icon.png" onclick="document.getElementById('dialtone').audio.volume = 0.2" />
