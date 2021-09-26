@@ -14,12 +14,15 @@ http-equiv="Content-Type">
 <script>
   var audio = document.getElementById("dialtone");
   audio.volume = 0.2;
-  function damn() {
+  function mute() {
     audio.volume = 0;
   }
+  function unmute() {
+    audio.volume = 0.2;
+  }
 </script>
-<img src="mute-icon.png" onclick= "damn()"/>
-<img src="unmute-icon.png" onclick="document.getElementById('dialtone').audio.volume = 0.2" />
+<img src="mute-icon.png" onclick= "mute()"/>
+<img src="unmute-icon.png" onclick="unmute()" />
 <body alink="#EE0000" bgcolor="#177013" link="#0000EE" text="#310771"
 vlink="#551A8B">
 <h1 align="center"><big><big><u>STEIN YA TWAT READ 177013</u></big></big></font></h1>
