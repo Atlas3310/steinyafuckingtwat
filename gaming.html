@@ -11,6 +11,21 @@ http-equiv="Content-Type">
 <audio id="big_shot" autoplay loop>
     <source src="big_shot.mp3" type="audio/mp3">
 </audio>
+<script>
+  var audio = document.getElementById("big_shot");
+  audio.volume = 0.2;
+  function mute() {
+    audio.volume = 0;
+  }
+  function unmute() {
+    audio.volume = 0.2;
+  }
+</script>
+<img src="mute-icon.png" onclick= "mute()"/>
+<img src="unmute-icon.png" onclick="unmute()" />
+<body alink="#EE0000" bgcolor="#177013" link="#0000EE" text="#310771"
+vlink="#551A8B">
+  
 <table width="100%" cellspacing="2" cellpadding="2" border="0">
 <tbody>
 <tr>
@@ -27,21 +42,6 @@ http-equiv="Content-Type">
 </tr>
 </tbody>
 </table>
-<script>
-  var audio = document.getElementById("big_shot");
-  audio.volume = 0.2;
-  function mute() {
-    audio.volume = 0;
-  }
-  function unmute() {
-    audio.volume = 0.2;
-  }
-</script>
-<img src="mute-icon.png" onclick= "mute()"/>
-<img src="unmute-icon.png" onclick="unmute()" />
-<body alink="#EE0000" bgcolor="#177013" link="#0000EE" text="#310771"
-vlink="#551A8B">
-
 
 <style>
 .footer {
