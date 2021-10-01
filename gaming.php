@@ -1,5 +1,14 @@
-<html>
+<?php
+date_default_timezone_set('Europe/Bratislava');
+include 'dbh.inc.php';
+include 'comments.inc.php'; 
+?>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css"> 
 <meta content="text/html; charset=ISO-8859-2"
 http-equiv="Content-Type">
   <title>Oi Stein</title>
@@ -71,31 +80,6 @@ bottom: 0;
 width: 100%;
 color: black;
 </style>
-
-
-
-<?php
-$dbServername = "localhost";
-$dbUsername = "root";
-$dbPassword = "";
-$dbName = "commentsection";
-date_default_timezone_set('Europe/Bratislava');
-include 'dbh.inc.php';
-include 'comments.inc.php'; 
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css">     
-</head>
-
-<body>
-   
-
-
 
 <?php
  echo"<form method='POST' action='".setComments($conn)."'>
